@@ -7,19 +7,6 @@
 <html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131173704-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-131173704-1');
-    </script>
-
     <title>Saeed Khorram</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -43,8 +30,8 @@
                 <p><code id="email">E-mail: khorrams (AT) oregonstate.edu</code></p>
                 <div class="inner align-center">
                     <br>
-                    <code> <span id="cv">1-page CV (Nov 2020)</span>: </code>
-                    <p><a class="align-center" href="./files/cv_nov_2020.pdf" id="kosmikh"><i class="fa fa-file-download fa-2x"></i></a></p>
+                    <code> <span id="cv">1-page CV</span>: </code>
+                    <p><a class="align-center" href="./files/cv.pdf" id="kosmikh"><i class="fa fa-file-download fa-2x"></i></a></p>
                     <br>
                 </div>
             </h1>
@@ -55,7 +42,7 @@
     <div id="main">
 
 
-        <!-- One -->
+<!-- ##################### INFO ############################# -->
         <section id="one">
             <header class="major">
                 <!--
@@ -74,16 +61,14 @@
         </section>
 
 
-
-
-
-
+<!-- ##################### NEWS ############################# -->
 	<section> 
 	    <h2 class="align-center">News</h2>
             <br>
 
 		<ul> 
-			<li> <span class="dark">Jan 21:</span> I joined <a href="scale.com">Scale AI</a> as a Machine Learning Research Engineer Intern starting January 2021.</li>
+			<li> <span class="dark">May 21:</span> Our paper "Re-Understanding Finite-State Representations of Recurrent Policy Networks" is accpeted to the ICML 21! <a href="https://arxiv.org/pdf/2006.03745">[PDF]</a>
+            <li> <span class="dark">Jan 21:</span> I joined <a href="scale.com">Scale AI</a> as a Machine Learning Research Engineer Intern starting January 2021.</li>
 			<li> <span class="dark">Nov 20:</span> Our paper "Embedding Deep Networks into Visual Explanations" is accepted to the Artificial Intelligence Journal! <a href="https://www.sciencedirect.com/science/article/abs/pii/S000437022030182X">[Journal]</a> </li>
 
 			<li> <span class="dark">Jul 20:</span> Full-length paper for "Understanding Finite-State Representations of Recurrent Policy Networks" is now available at arXiv! <a href="https://arxiv.org/pdf/2006.03745.pdf">[PDF]</a> </li>
@@ -113,7 +98,7 @@
 
 
 
-        <!-- Two -->
+<!-- ##################### PUBLICATIONS ############################# -->
         <section id="two">
             <h2 class="align-center">Publications</h2>
             <br>
@@ -121,17 +106,59 @@
                 <ul class="">
 
 
-
+<!-- ######################## -->
+                    <div class="align-center">
+                        <h4 class="dark">Re-Understanding Finite-State Representations of Recurrent Policy Networks
+                            <span class="">(ICMLW 20 + ICML 21)</span></h4>
+			<h5>Mohamad H. Danesh, Anurag Koul, Alan Fern, <strong>Saeed Khorram</strong></h5>
+                        <h5>[<a href="https://arxiv.org/pdf/2006.03745">PDF</a>]  </h5>
+                    </div>
+                    <br>
+                    <div class="box alt">
+                        <div class="row "> <!-- gtr-150 gtr-uniform -->
+                            <div class="col-4 col-12-small">
+                                <span class="image fit ">
+                                    <img src="images/papers/FSM_fig.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="col-8 col-12-small">
+				    <h5 align="justify">We introduce an approach for understanding control policies represented as recurrent neural networks. Recent work has approached this problem by transforming such recurrent policy networks into finite-state machines (FSM) and then analyzing the equivalent minimized FSM. While this led to interesting insights, the minimization process can obscure a deeper understanding of a machine’s operation by merging states that are semantically distinct. To address this issue, we introduce an analysis approach that starts with an unminimized FSM and applies more-interpretable reductions that preserve the key decision points of the policy. We also contribute an attention tool to attain a deeper understanding of the role of observations in the decisions. Our case studies on 7 Atari games and 3 control benchmarks demonstrate that the approach can reveal insights that have not been previously noticed.
+				    </h5>
+                            </div>
+                        </div>
+                    </div>
+<!-- ######################## -->
+                    <div class="align-center">
+                        <h4 class="dark">Stochastic Block-ADMM for Training Deep Networks
+                            <span class="">(pre-print)</span></h4>
+			<h5><strong>Saeed Khorram</strong>, Xiao Fu, Mohammad H. Danesh, Zhongang Qi, Li Fuxin</h5>
+                        <h5>[<a href="https://arxiv.org/pdf/2105.00339.pdf">PDF</a>]  </h5>
+                    </div>
+                    <br>
+                    <div class="box alt">
+                        <div class="row "> <!-- gtr-150 gtr-uniform -->
+                            <div class="col-4 col-12-small">
+                                <span class="image fit ">
+                                    <img src="images/papers/mnist_deep.svg" alt="">
+                                </span>
+                            </div>
+                            <div class="col-8 col-12-small">
+				    <h5 align="justify">In this paper, we propose Stochastic Block-ADMM as an approach to train deep neural networks in batch and online settings. Our method works by splitting neural networks into an arbitrary number of blocks and utilizes auxiliary variables to connect these blocks while optimizing with stochastic gradient descent. This allows training deep networks with non-differentiable constraints where conventional backpropagation is not applicable. An application of this is supervised feature disentangling, where our proposed DeepFacto inserts a non-negative matrix factorization (NMF) layer into the network. Since backpropagation only needs to be performed within each block, our approach alleviates vanishing gradients and provides potentials for parallelization. We prove the convergence of our proposed method and justify its capabilities through experiments in supervised and weakly-supervised settings.
+				    </h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+<!-- ######################## -->
+            <hr>
 
                     <div class="align-center">
                         <h4 class="dark">iGOS++: Integrated Gradient Optimized Saliency by Bilateral Perturbations
-                            <span class="">(pre-print 2020)</span></h4>
-			<h5><strong>Saeed Khorram</strong>, Tyler Lawson, Fuxin Li</h5>
-                        <h5>[<a href="https://arxiv.org/pdf/2012.15783.pdf">PDF</a>] 
+                            <span class="">(ACM-CHIL 21)</span></h4>
+			<h5><strong>Saeed Khorram</strong>, Tyler Lawson, Li Fuxin</h5>
+                        <h5>[<a href="https://arxiv.org/pdf/2012.15783.pdf">PDF</a>] [<a href="https://github.com/khorrams/IGOS_pp">Code</a>] </h5>
                     </div>
-
                     <br>
-
                     <div class="box alt">
                         <div class="row "> <!-- gtr-150 gtr-uniform -->
                             <div class="col-4 col-12-small">
@@ -145,42 +172,16 @@
                         </div>
                     </div>
 
-                    <div class="align-center">
-                        <h4 class="dark">Understanding Finite-State Representations of Recurrent Policy Networks
-                            <span class="">(ICML 20 workshop)</span></h4>
-			<h5>Mohamad H. Danesh, Anurag Koul, Alan Fern, <strong>Saeed Khorram</strong></h5>
-                        <h5>[<a href="https://arxiv.org/pdf/2006.03745">PDF</a>] 
-                    </div>
-
-                    <br>
-
-                    <div class="box alt">
-                        <div class="row "> <!-- gtr-150 gtr-uniform -->
-                            <div class="col-4 col-12-small">
-                                <span class="image fit ">
-                                    <img src="images/papers/FSM_fig.jpg" alt="">
-                                </span>
-                            </div>
-                            <div class="col-8 col-12-small">
-				    <h5 align="justify">We introduce an approach for understanding finite-state machine (FSM) representations of recurrent policy networks. Recent work focused on minimizing FSMs to gain high-level insight, however, minimization can obscure a deeper understanding by merging states that are semantically distinct. Conversely, our approach starts with an unminimized machine and applies more-interpretable reductions that preserve the key decision points of the policy. We also contribute a saliency tool to attain a deeper understanding of the role of observations in the decisions. Our case studies on policies from 7 Atari games and 3 control benchmarks demonstrate that the approach can reveal insights that have not been noticed in prior work.
-				    </h5>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
+<!-- ######################## -->
+            <hr>
 
                     <div class="align-center">
                         <h4 class="dark">Visualizing Deep Networks by Optimizing with Integrated Gradients
-                            <span class="">(CVPR 19 workshop, AAAI 20)</span></h4>
-                        <h5>Zhongang Qi, <strong>Saeed Khorram</strong>, Fuxin Li</h5>
+                            <span class="">(CVPRW 19, AAAI 20)</span></h4>
+                        <h5>Zhongang Qi, <strong>Saeed Khorram</strong>, Li Fuxin</h5>
 			<h5>[<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6863/6717">PDF</a>] [<a href="https://igos.eecs.oregonstate.edu/">Demo</a>] [<a href="https://github.com/zhongangqi/IGOS">Code</a>] [<a href="https://khorram-saeed.medium.com/i-gos-a-casual-saliency-approach-to-explain-deep-networks-953a0460b903">Medium</a>] </h5>
                     </div>
-
                     <br>
-
                     <div class="box alt">
                         <div class="row "> <!-- gtr-150 gtr-uniform -->
                             <div class="col-4 col-12-small">
@@ -209,15 +210,13 @@
                     </div>
 
 
-		    
+<!-- ######################## -->
 		    <hr>
-
-
 
                     <div class="align-center">
                         <h4 class="dark">Embedding Deep Networks into Visual Explanations <span class="">(Artificial Intelligence Journal 2020)</span></h4>
-                        <h5>Zhongang Qi, <strong>Saeed Khorram</strong>, Fuxin Li</h5>
-                        <h5>[<a href="https://arxiv.org/pdf/1709.05360.pdf">PDF</a>] [<a href="">Code</a>] [<a href="http://people.oregonstate.edu/~khorrams/xnn-study/">User Sudy</a>] </h5>
+                        <h5>Zhongang Qi, <strong>Saeed Khorram</strong>, Li Fuxin</h5>
+                        <h5>[<a href="https://arxiv.org/pdf/1709.05360.pdf">PDF</a>] [<a href="">Code</a>] </h5>
                     </div>
 
                     <br>
@@ -249,7 +248,8 @@
                             </div>
                         </div>
                     </div>
-
+                    
+<!-- ######################## -->
 		    <hr>
 
                     <li>
@@ -257,7 +257,7 @@
                             [<a href="./files/Combined_mRMR_Filter_and_Sparse_Bayesian_Classifier_for_Analysis_of_Gene_Expression_Data.pdf">PDF</a>]</h5>
                     </li>
 
-
+<!-- ######################## -->
 		    <hr>
 
                     <li>
@@ -268,6 +268,10 @@
             </div>
         </section>
     </div>
+    
+    
+    
+<!-- ########################### FOOTER ############################# -->
 
     <!-- Footer -->
     <footer id="footer">
