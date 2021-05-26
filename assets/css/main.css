@@ -202,7 +202,7 @@ body,
 input,
 select,
 textarea {
-    color: #a2a2a2;
+    color: #030831;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 16pt;
     font-weight: 400;
@@ -229,8 +229,8 @@ a:hover {
 
 strong,
 b {
-    color: #787878;
-    font-weight: 400;
+    color: #030831;
+    font-weight: 800;
 }
 
 em,
@@ -248,7 +248,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #787878;
+    color: #030831;
     font-weight: 400;
     line-height: 1em;
     margin: 0 0 1em 0;
@@ -3401,6 +3401,7 @@ h6 {
 
 
 .dark {
-	color: #000 !important;
+	color: #030831 !important;
+    font-weight: 600 !important;
 }
 
