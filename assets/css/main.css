@@ -717,7 +717,7 @@ pre code {
         width: 25%;
     }
 
-    .row > .off-3-xlarge { 
+    .row > .off-3-xlarge {
         margin-left: 25%;
     }
 
@@ -2124,7 +2124,7 @@ input[type="radio"] + label:before {
 .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-/*    font-family: FontAwesome;*/
+    /*    font-family: FontAwesome;*/
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -3380,13 +3380,14 @@ h6 {
 }
 
 #two h4 span {
-    font-size: 0.7em;    
+    font-size: 0.7em;
     line-height: 1.5em;
 }
 
 #two a {
     color: #4486B8 !important;
 }
+
 #two a:hover {
     border-bottom-color: transparent;
     color: #3B5678 !important;
@@ -3394,15 +3395,15 @@ h6 {
 }
 
 #two h6 {
-    padding-top: 0.5    em;
+    padding-top: 0.5 em;
 }
+
 .red {
     color: #AD4D4D !important;
 }
 
 
 .dark {
-	color: #030831 !important;
+    color: #030831 !important;
     font-weight: 600 !important;
 }
-
