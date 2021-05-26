@@ -215,7 +215,7 @@ a {
     -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     border-bottom: dotted 1px;
-    color: #758FA4;
+    color: #4486B8;
     /*		color: #49bf9d;*/
     text-decoration: none;
 }
@@ -3384,7 +3384,7 @@ h6 {
 }
 
 #two a {
-    color: #58ADEF !important;
+    color: #4486B8 !important;
 }
 #two a:hover {
     border-bottom-color: transparent;
