@@ -120,13 +120,88 @@
             <br>
             <div class="row">
                 <ul class="">
-                    
+
+                                         <!-- ######################## -->
+                    <div class="align-center">
+                        <h4 class="dark">“Comparing the Decision-Making Mechanisms by Transformers and CNNs via Explanation Methods”
+                            <span class="">(CVPR 24 - Oral/Best Paper Award Finalist)</span></h4>
+			<h5>Mingqi Jiang, <strong>Saeed Khorram</strong>, Li Fuxin</h5>
+			<h5>[<a href="https://arxiv.org/abs/2212.06872">arXiv</a>] [<a href="https://mingqij.github.io/projects/cdmmtc/">Project Page</a>] <a href="https://cvpr.thecvf.com/virtual/2024/poster/30580">[CVPR Page]</a> </h5>
+                    </div>
+                    <br>
+                    <div class="box alt">
+                        <div class="row ">
+                            <!-- gtr-150 gtr-uniform -->
+                            <div class="col-4 col-12-small">
+                                <span class="image fit ">
+                                    <img src="images/papers/cdmmtc.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="col-8 col-12-small">
+                                <h5 align="justify">In order to gain insights about the decision-making of different visual recognition backbones, we propose two methodologies, sub-explanation counting and cross-testing, that systematically applies deep explanation algorithms on a dataset-wide basis, and compares the statistics generated from the amount and nature of the explanations. These methodologies reveal the difference among networks in terms of two properties called compositionality and disjunctivism. Transformers and ConvNeXt are found to be more compositional, in the sense that they jointly consider multiple parts of the image in building their decisions, whereas traditional CNNs and distilled transformers are less compositional and more disjunctive, which means that they use multiple diverse but smaller set of parts to achieve a confident prediction. Through further experiments, we pinpointed the choice of normalization to be especially important in the compositionality of a model, in that batch normalization leads to less compositionality while group and layer normalization lead to more. Finally, we also analyze the features shared by different backbones and plot a landscape of different models based on their feature-use similarity.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                                         <!-- ######################## -->
+                    <div class="align-center">
+                        <h4 class="dark">“Taming the Tail in Class-Conditional GANs: Knowledge Sharing via Unconditional Training at Lower Resolutions”
+                            <span class="">(CVPR 24)</span></h4>
+			<h5><strong>Saeed Khorram</strong>, Mingqi Jiang, Mohamad Shahbazi, Mohamad H. Danesh, Li Fuxin</h5>
+			<h5>[<a href="https://arxiv.org/abs/2402.17065">arXiv</a>] [<a href="https://github.com/khorrams/utlo">Code</a>] <a href="https://cvpr.thecvf.com/virtual/2024/poster/31118">[CVPR Page]</a> <a href="files/utlo_poster.pdf">[Poster]</a></h5>
+                    </div>
+                    <br>
+                    <div class="box alt">
+                        <div class="row ">
+                            <!-- gtr-150 gtr-uniform -->
+                            <div class="col-4 col-12-small">
+                                <span class="image fit ">
+                                    <img src="images/papers/utlo.png" alt="">
+                                </span>
+                            </div>
+                            <div class="col-8 col-12-small">
+                                <h5 align="justify">CounterFactual (CF) visual explanations try to find images similar to the query image that change the decision of a vision system to a specified outcome. Existing methods either require inference-time optimization or joint training with a generative adversarial model which makes them time-consuming and difficult to use in practice. We propose a novel approach, Cycle-Consistent Counterfactuals by Latent Transformations (C3LT), which learns a latent transformation that automatically generates visual CFs by steering in the latent space of generative models. Our method uses cycle consistency between the query and CF codes in the latent space which helps our training to find better solutions. C3LT can be easily plugged into any state-of-the-art pretrained generative network. This enables our method to generate high-quality and interpretable CF examples at high-resolution images such as those in ImageNet. In addition to several established metrics for evaluating CF explanations, we introduce a novel metric tailored to assess the quality of the generated CF examples and validate the effectiveness of our method on an extensive set of experiments.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                                         <!-- ######################## -->
+                    <div class="align-center">
+                        <h4 class="dark">“Diverse Explanations for Object Detectors with Nesterov-Accelerated iGOS++”
+                            <span class="">(BMVC 23)</span></h4>
+			<h5>Mingqi Jiang, <strong>Saeed Khorram</strong>, Li Fuxin</h5>
+			<h5>[<a href="https://papers.bmvc2023.org/0188.pdf">PDF</a>] [<a href="https://github.com/khorrams/IGOS_pp">Code</a>]</h5>
+                    </div>
+                    <br>
+                    <div class="box alt">
+                        <div class="row ">
+                            <!-- gtr-150 gtr-uniform -->
+                            <div class="col-4 col-12-small">
+                                <span class="image fit ">
+                                    <img src="images/papers/nag.png" alt="">
+                                </span>
+                            </div>
+                            <div class="col-8 col-12-small">
+                                <h5 align="justify">Object detection is a crucial task in computer vision, with applications ranging from autonomous driving to surveillance systems. However, few have approached the problem of explaining object detections to gain more insights. In this paper, we extend iGOS++, an explanation algorithm of image classification models, to the task of object detection. Our extension consists of two novel aspects. The first is to utilize Nesterov Accelerated Gradient (NAG) to improve the optimization with integrated gradients. This significantly improves over the line search used in the original work in terms of both speed and quality. Besides, we propose to generate diverse explanations via different initializations of the optimization algorithm, which can better showcase the robustness of the network under different occlusions. To evaluate the effectiveness of our algorithm, we conduct experiments on the MS COCO and PASCAL VOC datasets. Results demonstrate that our approach significantly outperforms existing methods in terms of both explanation quality and speed. Besides, the diverse explanations it generates give more insight into the (sometimes erroneous) mechanisms underlying deep object detectors.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                      <!-- ######################## -->
                     <div class="align-center">
                         <h4 class="dark">“Cycle-Consistent Counterfactuals by Latent Transformations”
                             <span class="">(CVPR 22)</span></h4>
 			<h5><strong>Saeed Khorram</strong>, Li Fuxin</h5>
-			<h5>[<a href="https://arxiv.org/pdf/2203.15064.pdf">PDF</a>] [<a href="https://github.com/khorrams/c3lt">Code</a>] <a href="files/c3lt_poster.pdf">[Poster]</a> </h5>
+			<h5>[<a href="https://arxiv.org/abs/2203.15064">arXiv</a>] [<a href="https://github.com/khorrams/c3lt">Code</a>] <a href="files/c3lt_poster.pdf">[Poster]</a> </h5>
                     </div>
                     <br>
                     <div class="box alt">
@@ -321,20 +396,20 @@
                         </div>
                     </div>
 
-                    <!-- ######################## -->
-                    <hr>
+<!--                    &lt;!&ndash; ######################## &ndash;&gt;-->
+<!--                    <hr>-->
 
-                    <li>
-                        <h5 align="justify">Mehran Soltani, Mohammad Hasan Shammakhi, <strong>Saeed Khorram</strong>, and Hamid Sheikhzadeh. ”Combined mRMR filter and sparse Bayesian classifier for analysis of gene expression data.”, International Conference of Signal Processing and Intelligent Systems (ICSPIS), IEEE, 2016.
-                            [<a href="./files/Combined_mRMR_Filter_and_Sparse_Bayesian_Classifier_for_Analysis_of_Gene_Expression_Data.pdf">PDF</a>]</h5>
-                    </li>
+<!--                    <li>-->
+<!--                        <h5 align="justify">Mehran Soltani, Mohammad Hasan Shammakhi, <strong>Saeed Khorram</strong>, and Hamid Sheikhzadeh. ”Combined mRMR filter and sparse Bayesian classifier for analysis of gene expression data.”, International Conference of Signal Processing and Intelligent Systems (ICSPIS), IEEE, 2016.-->
+<!--                            [<a href="./files/Combined_mRMR_Filter_and_Sparse_Bayesian_Classifier_for_Analysis_of_Gene_Expression_Data.pdf">PDF</a>]</h5>-->
+<!--                    </li>-->
 
-                    <!-- ######################## -->
-                    <hr>
+<!--                    &lt;!&ndash; ######################## &ndash;&gt;-->
+<!--                    <hr>-->
 
-                    <li>
-                        <h5 align="justify">Mohamadreza Jafaryani, <strong>Saeed Khorram</strong>, Vahid Pourahmadi, and Minoo Shahbazi. “Sleep Stage Scoring Using Joint Frequency-Temporal and Unsupervised Features,”, International Conference on New Research Achievements in Electrical and Computer Engineering (ICNRAECE), IEEE, 2016. [<a href="./files/Sleep_Stage_Scoring_Using_Joint_Frequency_Temporal_and_Unsupervised_Features.pdf">PDF</a>]</h5>
-                    </li>
+<!--                    <li>-->
+<!--                        <h5 align="justify">Mohamadreza Jafaryani, <strong>Saeed Khorram</strong>, Vahid Pourahmadi, and Minoo Shahbazi. “Sleep Stage Scoring Using Joint Frequency-Temporal and Unsupervised Features,”, International Conference on New Research Achievements in Electrical and Computer Engineering (ICNRAECE), IEEE, 2016. [<a href="./files/Sleep_Stage_Scoring_Using_Joint_Frequency_Temporal_and_Unsupervised_Features.pdf">PDF</a>]</h5>-->
+<!--                    </li>-->
 
                 </ul>
             </div>
