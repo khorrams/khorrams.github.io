@@ -1,0 +1,10 @@
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/images/
+/images/*
+!/images/site/
+!/files/
+/files/*
+!/files/cv.pdf
